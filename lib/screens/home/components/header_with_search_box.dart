@@ -36,7 +36,7 @@ class HeaderWithSearchBox extends StatelessWidget {
             child: Row(
               children: <Widget>[
                 const Text(
-                  'Hi Uishopy!',
+                  'Plant App',
                   style: TextStyle(
                     fontSize: 25,
                     color: Colors.white,
