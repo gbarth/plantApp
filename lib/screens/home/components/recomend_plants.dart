@@ -22,7 +22,7 @@ class RecomendPlants extends StatelessWidget {
           ),
           RecomendPlantCard(
             image: "assets/images/image_2.png",
-            title: "Samantha",
+            title: "Angelica",
             country: "Russia",
             price: 440,
             press: () {},
