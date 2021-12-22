@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:plant_app/constants.dart';
+import 'package:plant_app/screens/home/home_screen.dart';
 
 import 'icon_card.dart';
 
@@ -34,7 +35,12 @@ class ImageAndIcons extends StatelessWidget {
                             horizontal: kDefaultPadding),
                         icon: SvgPicture.asset("assets/icons/back_arrow.svg"),
                         onPressed: () {
-                          Navigator.of(context).pop();
+                          WidgetsBinding.instance!.addPostFrameCallback((_) {
+                            Navigator.pushReplacement(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => const HomeScreen()));
+                          });
                         },
                       ),
                     ),

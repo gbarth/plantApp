@@ -20,11 +20,14 @@ class RecomendPlants extends StatelessWidget {
             country: "Russia",
             price: 440,
             press: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => const DetailsScreen(),
-                ),
+              WidgetsBinding.instance!.addPostFrameCallback(
+                (_) {
+                  Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const DetailsScreen()),
+                  );
+                },
               );
             },
           ),
@@ -34,11 +37,14 @@ class RecomendPlants extends StatelessWidget {
             country: "Russia",
             price: 440,
             press: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => const DetailsScreen(),
-                ),
+              WidgetsBinding.instance!.addPostFrameCallback(
+                (_) {
+                  Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const DetailsScreen()),
+                  );
+                },
               );
             },
           ),
@@ -48,11 +54,14 @@ class RecomendPlants extends StatelessWidget {
             country: "Russia",
             price: 440,
             press: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => const DetailsScreen(),
-                ),
+              WidgetsBinding.instance!.addPostFrameCallback(
+                (_) {
+                  Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const DetailsScreen()),
+                  );
+                },
               );
             },
           ),
